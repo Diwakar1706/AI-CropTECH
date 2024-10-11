@@ -1,0 +1,151 @@
+/* Add or modify your CSS styles to match the updated HTML structure */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.welcome-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #009688;
+}
+
+.welcome-section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.welcome-section button {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.welcome-section button:hover {
+    background: #00796b;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-container button:hover {
+    background: #00796b;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form button:hover {
+    background: #00796b;
+}
+
+.hidden {
+    display: none;
+}
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcomeMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #009688;
+}
+
+/* Movable background effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('crops2.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.1s ease-out;
+    z-index: -1;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-CropTECH</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>AI-CropTECH</AI-CropTECH></h1>
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="es">Spanish</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </header>
+
+    <section class="camera-section">
+        <h2>Capture Crop Images</h2>
+        <video id="video" autoplay></video>
+        <button onclick="capturePhoto()">Capture Photo</button>
+        <a href = "https://gemini.google.com/app/308c799c520cd7e5 ">visit this website to know more</a>
+        <a href = "https://gemini.google.com/app/308c799c520cd7e5 "></a>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div id="capturedImages" class="image-gallery"></div>
+    </section>
+
+    <section class="crop-details">
+        <h2>Crop Details</h2>
+        
+        <p id="cropInfo">Select an image to get crop details.</p>
+        <button onclick="getSymptoms()">Get Symptoms</button>
+        <button onclick="getPrecautions()">Get Precautions</button>
+        <div id="symptomImages" class="symptom-gallery"></div> <!-- Gallery for symptom images -->
+        <div id="precautionImages" class="precaution-gallery"></div> <!-- Gallery for precaution images -->
+    </section>
+
+    <section class="online-store">
+        <h2>Online Store</h2>
+        <p>Purchase pesticides and fertilizers:</p>
+        <ul id="storeItems">
+            <!-- Products will be dynamically added here -->
+        </ul>
+    </section>
+
+    <section class="video-consultation">
+        <h2>Video Consultation</h2>
+        <p>Connect with a Doctor:</p>
+        <button onclick="startVideoCall()">Start Video Call</button>
+        <div id="videoCallContainer" class="video-call-container">
+            <!-- Video call will be embedded here -->
+        </div>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+</html>
